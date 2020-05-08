@@ -19,7 +19,7 @@
   var API_SECRET = "dKoWi6l1vwR1eg0hpGyeDwDjLEg6EWwFGPHg";
 
   testTool = window.testTool;
-  document.getElementById("display_name").value =
+  document.getElementById("deviceInfo").innerHTML =
     "CDN" +
     ZoomMtg.getJSSDKVersion()[0] +
     testTool.detectOS() +

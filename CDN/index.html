@@ -11,18 +11,30 @@
 <style>
     body {
         padding-top: 50px;
+        
+    }
+    #zmmtg-root {
+       width: 900px;
+        margin: 100px auto;
+        position: static;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .loading-layer {
+        display: none;
     }
 </style>
 
-<nav id="nav-tool" class="navbar navbar-inverse navbar-fixed-top">
+<nav id="nav-tool" class="navbar">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">MyMeetingApp</a>
+            <a class="navbar-brand" href="#">Zoom Web POC </a>
         </div>
+        
         <div id="navbar">
             <form class="navbar-form navbar-right" id="meeting_form">
                 <div class="form-group">
-                    <input type="text" name="display_name" id="display_name" value="WebSDK1.7.7#CDN" placeholder="Name" class="form-control" required>
+                    <input type="text" name="display_name" id="display_name" value=""" placeholder="Name" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <input type="text" name="meeting_number" id="meeting_number" value="" placeholder="Meeting Number" class="form-control" required>
@@ -42,7 +54,12 @@
                 <button type="submit" class="btn btn-primary" id="join_meeting">Join</button>
             </form>
         </div><!--/.navbar-collapse -->
+      
     </div>
+    <div class="container">
+        <div>device info: <span id="deviceInfo"></span></div>
+    </div>
+   
 </nav>
 
 
