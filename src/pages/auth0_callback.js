@@ -10,9 +10,9 @@ const Auth0CallbackPage = () => {
 
   return (
     <Layout>
-      <h1>
+      <p>
         This is the auth callback page, you should be redirected immediately.
-      </h1>
+      </p>
     </Layout>
   );
 };
