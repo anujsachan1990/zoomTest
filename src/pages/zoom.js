@@ -1,15 +1,15 @@
-import React, { useEffect } from "react"
-import { initZoom } from "../utils/zoom"
-import Layout from "../components/layout"
+import React, { useEffect } from "react";
+import { initZoom } from "../utils/zoom";
+import Layout from "../components/layout";
 export default function Zoom() {
   useEffect(() => {
     // initZoom()
-  }, [])
+  }, []);
 
   return (
     <Layout>
       <div className="container">
-        <h1>Upcomming live Webinars</h1>
+        <h1>Upcoming live Webinars</h1>
         <div>
           <ul>
             <li>
@@ -37,5 +37,5 @@ export default function Zoom() {
         </div>
       </div>
     </Layout>
-  )
+  );
 }

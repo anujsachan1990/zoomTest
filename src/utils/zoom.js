@@ -3,16 +3,16 @@ export const initZoom = async ({
   userName = "default",
 }) => {
   // lazy load script
-  const { ZoomMtg } = await import("@zoomus/websdk")
+  const { ZoomMtg } = await import("@zoomus/websdk");
 
   if (typeof ZoomMtg !== "undefined") {
-    console.log("checkSystemRequirements")
-    console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()))
+    console.log("checkSystemRequirements");
+    console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
 
-    ZoomMtg.setZoomJSLib("https://source.zoom.us/1.7.7/lib", "/av") // CDN version default
-    ZoomMtg.preLoadWasm()
-    ZoomMtg.prepareJssdk()
-    var API_KEY = "p_0XQpvIS6iBbOAVnre51g"
+    ZoomMtg.setZoomJSLib("https://source.zoom.us/1.7.7/lib", "/av"); // CDN version default
+    ZoomMtg.preLoadWasm();
+    ZoomMtg.prepareJssdk();
+    var API_KEY = "p_0XQpvIS6iBbOAVnre51g";
 
     /**
      * NEVER PUT YOUR ACTUAL API SECRET IN CLIENT SIDE CODE, THIS IS JUST FOR QUICK PROTOTYPING
@@ -20,7 +20,7 @@ export const initZoom = async ({
      * You can find an eaxmple in here: https://marketplace.zoom.us/docs/sdk/native-sdks/web/essential/signature
      */
 
-    var API_SECRET = "dKoWi6l1vwR1eg0hpGyeDwDjLEg6EWwFGPHg"
+    var API_SECRET = "dKoWi6l1vwR1eg0hpGyeDwDjLEg6EWwFGPHg";
 
     const meetConfig = {
       apiKey: API_KEY,
@@ -28,9 +28,9 @@ export const initZoom = async ({
       meetingNumber,
       userName,
       passWord: "",
-      leaveUrl: "https://zoom.us",
+      leaveUrl: "https://anuj-zoom.netlify.app/zoom/",
       role: 0,
-    }
+    };
 
     ZoomMtg.generateSignature({
       meetingNumber: meetConfig.meetingNumber,
@@ -38,9 +38,9 @@ export const initZoom = async ({
       apiSecret: meetConfig.apiSecret,
       role: meetConfig.role,
       success(res) {
-        console.log("signature", res.result)
+        console.log("signature", res.result);
         ZoomMtg.init({
-          leaveUrl: "http://www.zoom.us",
+          leaveUrl: "https://anuj-zoom.netlify.app/zoom/",
           success() {
             ZoomMtg.join({
               meetingNumber: meetConfig.meetingNumber,
@@ -50,18 +50,18 @@ export const initZoom = async ({
               passWord: meetConfig.passWord,
               success() {
                 //  $("#nav-tool").hide();
-                console.log("join meeting success")
+                console.log("join meeting success");
               },
               error(res) {
-                console.log(res)
+                console.log(res);
               },
-            })
+            });
           },
           error(res) {
-            console.log(res)
+            console.log(res);
           },
-        })
+        });
       },
-    })
+    });
   }
-}
+};
