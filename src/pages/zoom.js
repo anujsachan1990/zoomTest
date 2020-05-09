@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { initZoom } from "../utils/zoom";
 import Layout from "../components/layout";
+import Profile from "../components/profile";
 import { Router } from "@reach/router";
 import PrivateRoute from "../components/PrivateRoute";
 
@@ -11,6 +12,7 @@ const Zoom = () => {
 
   return (
     <div className="container">
+      <Profile />
       <h1>Upcoming live Webinars</h1>
       <div>
         <ul>
