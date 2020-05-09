@@ -2,6 +2,7 @@ export const initZoom = async ({
   meetingNumber = 79631636690,
   userName = "default",
 }) => {
+  console.log("user", userName);
   // lazy load script
   const { ZoomMtg } = await import("@zoomus/websdk");
   console.log(ZoomMtg);

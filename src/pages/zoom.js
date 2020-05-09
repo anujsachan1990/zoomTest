@@ -18,21 +18,45 @@ const Zoom = () => {
         <ul>
           <li>
             Meeting 1{" "}
-            <button onClick={() => initZoom({ meetingNumber: 79631636690 })}>
+            <button
+              onClick={() =>
+                initZoom({
+                  meetingNumber: 79631636690,
+                  userName: JSON.parse(localStorage.getItem("useAuth:user"))
+                    .name,
+                })
+              }
+            >
               {" "}
               join
             </button>
           </li>
           <li>
             Meeting 2{" "}
-            <button onClick={() => initZoom({ meetingNumber: 79753241655 })}>
+            <button
+              onClick={() =>
+                initZoom({
+                  meetingNumber: 79753241655,
+                  userName: JSON.parse(localStorage.getItem("useAuth:user"))
+                    .name,
+                })
+              }
+            >
               {" "}
               join
             </button>
           </li>
           <li>
             Meeting 3{" "}
-            <button onClick={() => initZoom({ meetingNumber: 76011300805 })}>
+            <button
+              onClick={() =>
+                initZoom({
+                  meetingNumber: 76011300805,
+                  userName: JSON.parse(localStorage.getItem("useAuth:user"))
+                    .name,
+                })
+              }
+            >
               {" "}
               join
             </button>
