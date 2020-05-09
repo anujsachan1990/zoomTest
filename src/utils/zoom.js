@@ -4,7 +4,7 @@ export const initZoom = async ({
 }) => {
   // lazy load script
   const { ZoomMtg } = await import("@zoomus/websdk");
-
+  console.log(ZoomMtg);
   if (typeof ZoomMtg !== "undefined") {
     console.log("checkSystemRequirements");
     console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
