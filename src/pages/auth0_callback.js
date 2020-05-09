@@ -5,7 +5,7 @@ import { useAuth } from "react-use-auth";
 const Auth0CallbackPage = () => {
   const { handleAuthentication } = useAuth();
   useEffect(() => {
-    handleAuthentication({ postLoginRoute: "/app" });
+    handleAuthentication({ postLoginRoute: "/zoom" });
   }, []);
 
   return (

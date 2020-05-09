@@ -1,6 +1,6 @@
 // import ...
 import React from "react";
-import { navigate } from "gatsby";
+import { navigate } from "@reach/router";
 import { useAuth } from "react-use-auth";
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
   const { isAuthenticated } = useAuth();

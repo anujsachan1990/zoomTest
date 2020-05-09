@@ -3,6 +3,7 @@ import { initZoom } from "../utils/zoom";
 import Layout from "../components/layout";
 import { Router } from "@reach/router";
 import PrivateRoute from "../components/PrivateRoute";
+
 const Zoom = () => {
   useEffect(() => {
     // initZoom()
@@ -44,7 +45,7 @@ const App = () => {
   return (
     <Layout>
       <Router basepath="/">
-        <PrivateRoute path="/app" component={Zoom} />
+        <PrivateRoute path="/zoom" component={Zoom} />
       </Router>
     </Layout>
   );
