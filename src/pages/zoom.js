@@ -17,21 +17,21 @@ const Zoom = () => {
       <div>
         <ul>
           <li>
-            meeting 1{" "}
+            Meeting 1{" "}
             <button onClick={() => initZoom({ meetingNumber: 79631636690 })}>
               {" "}
               join
             </button>
           </li>
           <li>
-            meeting 2{" "}
+            Meeting 2{" "}
             <button onClick={() => initZoom({ meetingNumber: 79753241655 })}>
               {" "}
               join
             </button>
           </li>
           <li>
-            meeting 3{" "}
+            Meeting 3{" "}
             <button onClick={() => initZoom({ meetingNumber: 76011300805 })}>
               {" "}
               join

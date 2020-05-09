@@ -1,17 +1,28 @@
 import React from "react";
-import { navigate } from "@reach/router";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { useAuth } from "react-use-auth";
 import { Placeholder } from "../components/placeholder-div";
+import { navigate } from "gatsby";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Placeholder>
-      <p>click below to navigate to scheduled meeting</p>
-      <button onClick={() => navigate("/zoom")}>Go to Meeting</button>
-    </Placeholder>
-  </Layout>
-);
+const IndexPage = () => {
+  const { isAuthenticated } = useAuth();
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Placeholder>
+        {!isAuthenticated() ? (
+          <p>Please Login to see your scheduled meetings</p>
+        ) : (
+          <>
+            <p>Click below to see your meetings</p>
+            <button onClick={() => navigate("/zoom")}>your meetings</button>
+          </>
+        )}
+      </Placeholder>
+    </Layout>
+  );
+};
 
 export default IndexPage;
