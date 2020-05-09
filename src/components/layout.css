@@ -73,3 +73,7 @@ button {
 .profileDetails > div {
   margin-bottom: 10px;
 }
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
