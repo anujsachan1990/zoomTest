@@ -5,7 +5,14 @@ import axios from "axios";
 
 exports.handler = (event, context, callback) => {
   axios
-    .get("https://jsonplaceholder.typicode.com/todos/1")
+    .get(
+      "https://api.airtable.com/v0/appzhdjp7tk4G73Bh/Table%201/rec6geqqgLD24YQ8Z",
+      {
+        headers: {
+          Authorization: "Bearer keypXdhotixFUmd7K",
+        },
+      }
+    )
     .then((res) => {
       callback(null, {
         statusCode: 200,
