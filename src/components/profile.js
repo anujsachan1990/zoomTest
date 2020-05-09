@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const userProfile = JSON.parse(localStorage.getItem("useAuth:user"));
-export default function profile() {
+export default function Profile() {
+  const [state, setstate] = useState({});
+  useEffect(() => {
+    const userProfile = JSON.parse(localStorage.getItem("useAuth:user"));
+    setTimeout(setstate(userProfile), 1000);
+  }, []);
   return (
-    userProfile && (
-      <div>
-        <img src={userProfile.picture}></img>
-        <div>Name: {userProfile.name}</div>
-        <div>Email: {userProfile.email}</div>
-        <div>Email Verified: {userProfile.email_verified ? "Yes" : "No"}</div>
+    state && (
+      <div className="profile">
+        <img src={state.picture}></img>
+        <div className="profileDetails">
+          <div>Name: {state.name}</div>
+          <div>Email: {state.email}</div>
+          <div>Email Verified: {state.email_verified ? "Yes" : "No"}</div>
+        </div>
       </div>
     )
   );
