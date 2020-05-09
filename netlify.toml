@@ -1,6 +1,7 @@
 [build]
   publish = "public"
   Functions = "lambda"
+  Command = "npm run build:lambda"
 
 [[plugins]]
 package = "netlify-plugin-gatsby-cache"
