@@ -27,7 +27,7 @@ export const initZoom = async ({
       apiSecret: API_SECRET,
       meetingNumber,
       userName,
-      passWord: "",
+      passWord: "anuj",
       leaveUrl: "https://anuj-zoom.netlify.app/zoom/",
       role: 0,
     };
