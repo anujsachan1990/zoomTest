@@ -6,7 +6,7 @@ import { useAuth } from "react-use-auth";
 export default () => {
   const { isAuthenticated, login, logout } = useAuth();
   return (
-    <nav>
+    <nav className="container">
       {!isAuthenticated() ? (
         <button onClick={() => login()}>Login</button>
       ) : (
