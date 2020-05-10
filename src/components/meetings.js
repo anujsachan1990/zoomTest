@@ -15,7 +15,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/meeting?meetingNumber=79631636690&userName=${
+                  `/zoom/meeting?meetingNumber=75827477148&userName=${
                     JSON.parse(localStorage.getItem("useAuth:user")).name
                   }`
                 )
@@ -30,7 +30,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/meeting?meetingNumber=79753241655&userName=${
+                  `/zoom/meeting?meetingNumber=72874024378&userName=${
                     JSON.parse(localStorage.getItem("useAuth:user")).name
                   }`
                 )
@@ -45,7 +45,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/meeting?meetingNumber=76011300805&userName=${
+                  `/zoom/meeting?meetingNumber=77654577325&userName=${
                     JSON.parse(localStorage.getItem("useAuth:user")).name
                   }`
                 )

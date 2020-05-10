@@ -17,6 +17,7 @@ const ZoomMeeting = () => {
     <div>
       <h2>Meeting: {meetingDetails.meetingNumber} </h2>
       <h2>user name: {meetingDetails.userName}</h2>
+      <p>Please wait while your meeting is loading...</p>
     </div>
   );
 };
