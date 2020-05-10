@@ -15,6 +15,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/zoom/*`] },
+    },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-playground`,
     `gatsby-transformer-sharp`,
@@ -35,4 +39,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

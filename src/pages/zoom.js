@@ -1,73 +1,16 @@
 import React from "react";
-import { initZoom } from "../utils/zoom";
 import Layout from "../components/layout";
-import Profile from "../components/profile";
 import { Router } from "@reach/router";
 import PrivateRoute from "../components/PrivateRoute";
-
-const Zoom = () => {
-  return (
-    <div className="container">
-      <Profile />
-      <h1>Upcoming live Webinars</h1>
-      <div>
-        <ul>
-          <li>
-            Meeting 1{" "}
-            <button
-              onClick={() =>
-                initZoom({
-                  meetingNumber: 79631636690,
-                  userName: JSON.parse(localStorage.getItem("useAuth:user"))
-                    .name,
-                })
-              }
-            >
-              {" "}
-              join
-            </button>
-          </li>
-          <li>
-            Meeting 2{" "}
-            <button
-              onClick={() =>
-                initZoom({
-                  meetingNumber: 79753241655,
-                  userName: JSON.parse(localStorage.getItem("useAuth:user"))
-                    .name,
-                })
-              }
-            >
-              {" "}
-              join
-            </button>
-          </li>
-          <li>
-            Meeting 3{" "}
-            <button
-              onClick={() =>
-                initZoom({
-                  meetingNumber: 76011300805,
-                  userName: JSON.parse(localStorage.getItem("useAuth:user"))
-                    .name,
-                })
-              }
-            >
-              {" "}
-              join
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+import ZoomMeeting from "../components/zoomMeeting";
+import Meeting from "../components/meetings";
 
 const App = () => {
   return (
     <Layout>
       <Router basepath="/">
-        <PrivateRoute path="/zoom" component={Zoom} />
+        <PrivateRoute path="/zoom" component={Meeting} />
+        <PrivateRoute path="/zoom/meeting" component={ZoomMeeting} />
       </Router>
     </Layout>
   );
