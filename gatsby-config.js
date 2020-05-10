@@ -1,10 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Zoom Test with web-sdk POC`,
-    description: `This starter is for more advanced Gatsby developers who desire less initial boilerplate code than the
-    default starter currently provides. Added is a checklist of design decisions to make at the outset of the
-    project!`,
-    author: `Michael S Caveney`,
+    description: `Zoom web-sdk integration.`,
+    author: `Anuj Sachan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
