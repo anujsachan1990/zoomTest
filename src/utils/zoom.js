@@ -1,11 +1,8 @@
-export const initZoom = async ({
-  meetingNumber = 79631636690,
-  userName = "default",
-}) => {
+export const initZoom = async ({ meetingNumber, userName }) => {
   console.log("user", userName);
   // lazy load script
   const { ZoomMtg } = await import("@zoomus/websdk");
-  console.log(ZoomMtg);
+
   if (typeof ZoomMtg !== "undefined") {
     console.log("checkSystemRequirements");
     console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
