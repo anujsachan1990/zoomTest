@@ -34,6 +34,21 @@ const Meetings = () => {
             </a>
           </p>
         </li>
+        <li>
+          <p>
+            Meeting Can be directly Created in Zoom from Calederly{" "}
+            <a href="https://calendly.com/anujsachan1991" target="_blank">
+              Meeting Schedule link
+            </a>{" "}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://developer.calendly.com/docs/user-event-types"
+              target="_blank"
+            >
+              API Link
+            </a>
+          </p>
+        </li>
       </ul>
       <h2>Meeting List </h2>
       <div>
