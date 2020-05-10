@@ -8,7 +8,7 @@ export default () => {
   return (
     <nav className="container">
       {!isAuthenticated() ? (
-        <button onClick={() => login()}>Login</button>
+        <button onClick={() => login()}>Login / SignUp </button>
       ) : (
         <button onClick={() => logout()}>Logout</button>
       )}
