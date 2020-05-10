@@ -3,7 +3,10 @@ import { getSearchParams } from "gatsby-query-params";
 import { initZoom } from "../utils/zoom";
 
 //import { initZoom } from "../utils/zoom";
-const userName = JSON.parse(localStorage.getItem("useAuth:user")).name;
+let userName;
+if (typeof window !== "undefined") {
+  userName = JSON.parse(localStorage.getItem("useAuth:user")).name;
+}
 const ZoomMeeting = () => {
   const meetingDetails = getSearchParams();
   initZoom({
