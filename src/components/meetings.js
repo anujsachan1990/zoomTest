@@ -50,7 +50,7 @@ const Meetings = () => {
           </p>
         </li>
       </ul>
-      <h2>Meeting List </h2>
+      <h2>Meeting List (hardcoded)</h2>
       <div>
         <ul>
           <li>
