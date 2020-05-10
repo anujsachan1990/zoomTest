@@ -12,7 +12,7 @@ const Meetings = () => {
         <li>
           {" "}
           <p>
-            Below Meetings are hardcodeed, needs to appear from{" "}
+            Below Meetings are hardcoded, needs to appear from{" "}
             <a
               target="_blank"
               href="https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetings"
