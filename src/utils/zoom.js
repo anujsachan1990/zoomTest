@@ -29,7 +29,7 @@ export const initZoom = async ({
       meetingNumber,
       userName,
       passWord: "anuj",
-      leaveUrl: "https://anuj-zoom.netlify.app/zoom/",
+      leaveUrl: "/zoom",
       role: 0,
     };
 
@@ -42,7 +42,7 @@ export const initZoom = async ({
         console.log("signature", res.result);
 
         ZoomMtg.init({
-          leaveUrl: "https://anuj-zoom.netlify.app/zoom/",
+          leaveUrl: "/zoom",
           success() {
             ZoomMtg.join({
               meetingNumber: meetConfig.meetingNumber,
