@@ -22,6 +22,7 @@ const IndexPage = () => {
           <>
             <p>Click below to see your meetings</p>
             <button onClick={() => navigate("/zoom")}>your meetings</button>
+            <LoginLogout />
           </>
         )}
       </Placeholder>
