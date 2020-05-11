@@ -3,6 +3,7 @@ export const initZoom = async ({ meetingNumber, userName }) => {
   // lazy load script
   const { ZoomMtg } = await import("@zoomus/websdk");
 
+  console.log(ZoomMtg);
   if (typeof ZoomMtg !== "undefined") {
     console.log("checkSystemRequirements");
     console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
@@ -40,6 +41,19 @@ export const initZoom = async ({ meetingNumber, userName }) => {
 
         ZoomMtg.init({
           leaveUrl: "/zoom",
+          isSupportChat: false,
+          isSupportQA: false,
+          isSupportCC: false,
+          sharingMode: "fit",
+          videoHeader: false,
+          screenShare: false,
+          videoDrag: false,
+          isSupportNonverbal: false,
+          showMeetingHeader: false,
+          disableCallOut: true,
+          disableRecord: true,
+          isLockBottom: false,
+          disableInvite: true,
           success() {
             ZoomMtg.join({
               meetingNumber: meetConfig.meetingNumber,

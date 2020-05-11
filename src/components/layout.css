@@ -35,13 +35,15 @@ body {
   margin: auto;
   padding-top: 10px;
 }
+
 .container li {
   margin-bottom: 10px;
   font-size: 20px;
 }
 
 button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
+  /* Green */
   border: none;
   color: white;
   padding: 10px 32px;
@@ -70,10 +72,25 @@ button {
   margin-left: 20px;
   font-size: 17px;
 }
-.profileDetails > div {
+
+.profileDetails>div {
   margin-bottom: 10px;
 }
+
 nav {
   display: flex;
   justify-content: flex-end;
+}
+
+.iframeWindow {
+  margin-top: 10px;
+  display: flex;
+}
+
+.iframeWindow iframe {
+  flex: 1;
+}
+
+.iframeWindow iframe:first-child {
+  flex: 2.5;
 }

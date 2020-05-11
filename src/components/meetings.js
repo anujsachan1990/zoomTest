@@ -1,6 +1,5 @@
 import React from "react";
 import Profile from "../components/profile";
-import { initZoom } from "../utils/zoom";
 import { navigate } from "@reach/router";
 
 const Meetings = () => {
@@ -58,7 +57,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/meeting?meetingNumber=75827477148&userName=${
+                  `/zoom/yourMeeting?meetingNumber=75827477148&userName=${
                     JSON.parse(localStorage.getItem("useAuth:user")).name
                   }`
                 )
@@ -73,7 +72,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/meeting?meetingNumber=72874024378&userName=${
+                  `/zoom/yourMeeting?meetingNumber=72874024378&userName=${
                     JSON.parse(localStorage.getItem("useAuth:user")).name
                   }`
                 )
@@ -88,7 +87,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/meeting?meetingNumber=77654577325&userName=${
+                  `/zoom/yourMeeting?meetingNumber=77654577325&userName=${
                     JSON.parse(localStorage.getItem("useAuth:user")).name
                   }`
                 )
