@@ -1,14 +1,14 @@
 // import ...
-import React from "react";
+import React, { useEffect } from "react";
 import { navigate } from "@reach/router";
 import { useAuth } from "react-use-auth";
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
-  const { isAuthenticated } = useAuth();
+  const isLoggedin = JSON.parse(localStorage.getItem("useAuth:user"));
 
-  if (!isAuthenticated()) {
+  if (!isLoggedin) {
     navigate("/");
-    return null;
   }
+
   return <Component {...rest} />;
 };
 export default PrivateRoute;

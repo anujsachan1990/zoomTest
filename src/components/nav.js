@@ -4,13 +4,22 @@ import React from "react";
 import { useAuth } from "react-use-auth";
 
 export default () => {
-  const { isAuthenticated, login, logout } = useAuth();
+  const { login, logout } = useAuth();
+  const isLoggedin = JSON.parse(localStorage.getItem("useAuth:user"));
+
   return (
     <nav className="container">
-      {!isAuthenticated() ? (
+      {!isLoggedin ? (
         <button onClick={() => login()}>Login / SignUp </button>
       ) : (
-        <button onClick={() => logout()}>Logout</button>
+        <button
+          onClick={() => {
+            localStorage.removeItem("useAuth:user");
+            logout();
+          }}
+        >
+          Logout
+        </button>
       )}
     </nav>
   );
