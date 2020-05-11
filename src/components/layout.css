@@ -94,3 +94,19 @@ nav {
 .iframeWindow iframe:first-child {
   flex: 2.5;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .iframeWindow {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .iframeWindow iframe {
+    flex: 1;
+  }
+
+  .iframeWindow iframe:first-child {
+    flex: 1;
+  }
+}
