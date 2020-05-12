@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Profile from "../components/profile";
+import { notifyMe } from "../utils/notification";
 import { navigate } from "@reach/router";
 
 const Meetings = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      notifyMe();
+    }, 2000);
+  }, []);
   return (
     <div className="container">
       <Profile />
