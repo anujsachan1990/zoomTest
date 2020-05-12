@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+
 import { Router } from "@reach/router";
 import PrivateRoute from "../components/PrivateRoute";
 import ZoomMeeting from "../components/zoomMeeting";
@@ -8,13 +8,11 @@ import IframeWithMeeting from "../components/IframeWithMeeting";
 
 const App = () => {
   return (
-    <Layout>
-      <Router basepath="/">
-        <PrivateRoute path="/zoom" component={Meeting} />
-        <PrivateRoute path="/zoom/yourMeeting" component={IframeWithMeeting} />
-        <PrivateRoute path="/zoom/meeting" component={ZoomMeeting} />
-      </Router>
-    </Layout>
+    <Router basepath="/">
+      <PrivateRoute path="/zoom" component={Meeting} />
+      <PrivateRoute path="/zoom/yourMeeting" component={IframeWithMeeting} />
+      <PrivateRoute path="/zoom/meeting" component={ZoomMeeting} hideLayout />
+    </Router>
   );
 };
 export default App;

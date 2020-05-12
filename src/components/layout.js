@@ -26,8 +26,10 @@ const Layout = ({ children, hideLogin }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      {!hideLogin && <LoginLogout />}
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        {!hideLogin && <LoginLogout />}
+      </>
 
       <div
         style={{

@@ -27,7 +27,7 @@ export const initZoom = async ({ meetingNumber, userName }) => {
       meetingNumber,
       userName,
       passWord: "anuj",
-      leaveUrl: "/zoom",
+      leaveUrl: "/meetingend",
       role: 0,
     };
 
@@ -40,7 +40,7 @@ export const initZoom = async ({ meetingNumber, userName }) => {
         console.log("signature", res.result);
 
         ZoomMtg.init({
-          leaveUrl: "/zoom",
+          leaveUrl: "/meetingend",
           isSupportChat: false,
           isSupportQA: false,
           isSupportCC: false,
