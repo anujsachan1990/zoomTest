@@ -15,6 +15,7 @@ exports.handler = (event, context, callback) => {
         statusCode: 200,
         body: JSON.stringify(res.data),
         headers: {
+          "Content-Type: application/json",
           "Cache-Control": "public, s-maxage=300",
         },
       });
