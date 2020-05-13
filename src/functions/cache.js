@@ -3,7 +3,7 @@ exports.handler = function(event, context, callback) {
     statusCode: 200,
     body: new Date().toString(),
     headers: {
-      "Cache-Control": "public, s-maxage=86400",
+      "Cache-Control": "public, s-maxage=300",
     },
   });
 };
