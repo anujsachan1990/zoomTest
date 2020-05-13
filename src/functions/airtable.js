@@ -13,10 +13,10 @@ exports.handler = (event, context, callback) => {
     .then((res) => {
       callback(null, {
         statusCode: 200,
+        body: JSON.stringify(res.data),
         headers: {
           "Cache-Control": "public, s-maxage=300",
         },
-        body: JSON.stringify(res.data),
       });
     })
     .catch((err) => {
