@@ -7,13 +7,15 @@ exports.handler = (event, context, callback) => {
   axios
     .get("https://api.airtable.com/v0/appzhdjp7tk4G73Bh/Table%201", {
       headers: {
-        "Cache-Control": "public, s-maxage=240",
         Authorization: "Bearer keypXdhotixFUmd7K",
       },
     })
     .then((res) => {
       callback(null, {
         statusCode: 200,
+        headers: {
+          "Cache-Control": "public, s-maxage=300",
+        },
         body: JSON.stringify(res.data),
       });
     })
