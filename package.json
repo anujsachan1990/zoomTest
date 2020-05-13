@@ -13,6 +13,7 @@
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-create-client-paths": "^2.3.1",
     "gatsby-plugin-manifest": "^2.2.27",
+    "gatsby-plugin-netlify-functions": "0.0.3",
     "gatsby-plugin-offline": "^3.0.19",
     "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-react-helmet": "^3.1.14",
