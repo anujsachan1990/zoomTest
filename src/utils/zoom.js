@@ -11,7 +11,7 @@ export const initZoom = async ({ meetingNumber, userName }) => {
     ZoomMtg.setZoomJSLib("https://source.zoom.us/1.7.7/lib", "/av"); // CDN version default
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareJssdk();
-    var API_KEY = "p_0XQpvIS6iBbOAVnre51g";
+    var API_KEY = "66xq-9HhQnCAPzeKGyfnCQ";
 
     /**
      * NEVER PUT YOUR ACTUAL API SECRET IN CLIENT SIDE CODE, THIS IS JUST FOR QUICK PROTOTYPING
@@ -19,7 +19,7 @@ export const initZoom = async ({ meetingNumber, userName }) => {
      * You can find an eaxmple in here: https://marketplace.zoom.us/docs/sdk/native-sdks/web/essential/signature
      */
 
-    var API_SECRET = "dKoWi6l1vwR1eg0hpGyeDwDjLEg6EWwFGPHg";
+    var API_SECRET = "3AtO71slHElPo9PX8hrCUrXrcSTmRKYfpiiw";
 
     const meetConfig = {
       apiKey: API_KEY,
