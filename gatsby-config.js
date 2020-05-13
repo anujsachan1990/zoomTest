@@ -1,4 +1,18 @@
+var proxy = require("http-proxy-middleware");
+
 module.exports = {
+  developMiddleware: (app) => {
+    app.use(
+      "/.netlify/functions/",
+      proxy({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    );
+  },
+
   siteMetadata: {
     title: `Zoom Test with web-sdk POC`,
     description: `Zoom web-sdk integration.`,
