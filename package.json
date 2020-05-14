@@ -26,7 +26,8 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-use-auth": "^0.6.1"
+    "react-use-auth": "^0.6.1",
+    "use-auth0-hooks": "^0.7.0"
   },
   "devDependencies": {
     "gatsby-plugin-emotion": "^4.1.15",
