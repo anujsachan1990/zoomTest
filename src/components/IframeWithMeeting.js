@@ -7,8 +7,11 @@ export default function IframeWithMeeting() {
 
   return (
     <>
-      <h1>With Zoom and Slido</h1>
-      <p>Both are different iframes</p>
+      <h2>With Zoom and Slido</h2>
+      <p>
+        Both are different iframes. Zoom is Using zoom websdk to show embed in
+        web.{" "}
+      </p>
       <div className="iframeWindow">
         <iframe
           id="zoom"

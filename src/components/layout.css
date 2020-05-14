@@ -83,10 +83,6 @@ nav {
   justify-content: flex-end;
 }
 
-iframe {
-  margin: 20px;
-}
-
 .iframeWindow {
   margin-top: 10px;
   display: flex;

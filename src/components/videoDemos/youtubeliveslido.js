@@ -5,9 +5,9 @@ export default function IframeWithMeeting() {
     <Layout>
       <h3>With Youtube live video</h3>
       <iframe
-        src="https://app.sli.do/event/5c0irwhb"
+        src="https://app.sli.do/event/37tabfoo"
+        height="600"
         width="100%"
-        height="500"
       ></iframe>
     </Layout>
   );

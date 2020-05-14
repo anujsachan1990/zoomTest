@@ -4,11 +4,11 @@ import Layout from "../layout";
 export default function IframeWithMeeting() {
   return (
     <Layout>
-      <h3>With Youtube video</h3>
+      <h2>With Youtube video</h2>
       <iframe
-        src="https://app.sli.do/event/j8fgbp8v"
+        src="https://app.sli.do/event/8schaaq5"
+        height="500px"
         width="100%"
-        height="500"
       ></iframe>
     </Layout>
   );
