@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import vince from "../images/vince.gif"
-import { Placeholder } from "../components/placeholder-div"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import vince from "../images/vince.gif";
+import { Placeholder } from "../components/placeholder-div";
 
 const NotFoundPage = () => (
   <Layout>
@@ -14,6 +14,6 @@ const NotFoundPage = () => (
       <p>...but it ain't here, chief.</p>
     </Placeholder>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
