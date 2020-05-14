@@ -16,7 +16,7 @@ const IndexPage = () => {
       <Placeholder>
         {!isAuthenticated() ? (
           <>
-            <p>Please Login to see your scheduled meetings</p>
+            <h2>Please Login to see your scheduled meetings</h2>
             <LoginLogout />
           </>
         ) : (
