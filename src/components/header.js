@@ -21,7 +21,7 @@ const nav = [
   },
 
   {
-    to: "/zoom/flipVideo",
+    to: "/zoom/flipLiveVideos",
     label: "FlipVideo",
   },
 ];

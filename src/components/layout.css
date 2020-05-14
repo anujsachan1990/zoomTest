@@ -119,6 +119,12 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
+  .flipper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .iframeWindow {
     flex-direction: column;
     height: 100vh;
@@ -165,4 +171,9 @@ footer {
   bottom: 0;
   margin-top: 30px;
   width: 100%;
+}
+
+.flipper {
+  display: flex;
+  flex-direction: row;
 }
