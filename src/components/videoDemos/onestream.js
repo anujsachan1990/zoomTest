@@ -2,13 +2,16 @@ import React from "react";
 
 import Layout from "../layout";
 
-import { Placeholder } from "../placeholder-div";
-
 const IndexPage = () => {
   return (
     <Layout hideLogin>
       <div>
         <h2>One Stream with Youtube Live Scheduled Pre-recorded</h2>
+        <a href="https://onestream.live" target="_blank">
+          What is One Stream?{" "}
+        </a>
+        <br />
+        <br />
         <iframe
           src="https://app.sli.do/event/5c0irwhb"
           height="500"

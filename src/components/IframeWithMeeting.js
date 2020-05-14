@@ -13,6 +13,14 @@ export default function IframeWithMeeting() {
         Both are different iframes. Zoom is Using zoom websdk to show embed in
         web.{" "}
       </p>
+      <a
+        href="https://marketplace.zoom.us/docs/sdk/native-sdks/web"
+        target="_blank"
+      >
+        What is Zoom Sdk?{" "}
+      </a>
+      <br />
+      <br />
       <div className="iframeWindow">
         <iframe
           id="zoom"
