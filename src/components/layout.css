@@ -144,6 +144,11 @@ nav {
   border-right: 1px solid #fff;
   padding-right: 13px;
 }
+.navigation a:last-child {
+  margin: 10px;
+  border-right: 0;
+  padding-right: 13px;
+}
 
 main {
   margin-top: 50px;
