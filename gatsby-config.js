@@ -29,7 +29,16 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/zoom/*`] },
+      options: {
+        prefixes: [
+          `/zoom/`,
+          `/zoom/ecamm`,
+          "/zoom/onestream",
+          "/zoom/youtubeLiveWithSlido",
+          "/zoom/youtubeSlido",
+          "/zoom/flipLiveVideos",
+        ],
+      },
     },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-playground`,
