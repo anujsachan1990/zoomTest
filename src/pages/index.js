@@ -16,12 +16,12 @@ const IndexPage = () => {
       <Placeholder>
         {!isAuthenticated() ? (
           <>
-            <h2>Please Login to see your scheduled meetings</h2>
+            <h3>Please Login to see your scheduled meetings</h3>
             <LoginLogout />
           </>
         ) : (
           <>
-            <p>Click below to see your meetings</p>
+            <h3>Click below to see your meetings</h3>
             <button onClick={() => navigate("/zoom")}>your meetings</button>
             <LoginLogout />
           </>
