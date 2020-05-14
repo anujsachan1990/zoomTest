@@ -4,8 +4,9 @@ import React from "react";
 
 const nav = [
   {
-    to: "/zoom/zoomWithSlido",
-    label: "Zoom with Slido",
+    to: "/zoom",
+    label: "your meetings",
+    relaod: true,
   },
   {
     to: "/zoom/ecamm",
@@ -21,7 +22,7 @@ const nav = [
   },
   {
     to: "/zoom/youtubeSlido",
-    label: "Youtube with slido",
+    label: "Youtube with Slido",
   },
 
   {
@@ -58,7 +59,7 @@ const Header = ({ siteTitle }) => (
     </div>
     <div className="navigation">
       {nav.map((item) => {
-        return (
+        return !item.relaod ? (
           <Link
             to={item.to}
             style={{
@@ -68,6 +69,16 @@ const Header = ({ siteTitle }) => (
           >
             {item.label}
           </Link>
+        ) : (
+          <a
+            href={item.to}
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {item.label}
+          </a>
         );
       })}
     </div>
