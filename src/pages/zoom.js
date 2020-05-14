@@ -14,7 +14,7 @@ import FlipLiveVideos from "../components/videoDemos/flipLiveVideos";
 
 const App = () => {
   return (
-    <Router basepath="/">
+    <Router>
       <PrivateRoute path="/zoom" component={Meeting} />
       <PrivateRoute path="/zoom/yourMeeting" component={IframeWithMeeting} />
       <PrivateRoute path="/zoom/meeting" component={ZoomMeeting} hideLayout />
