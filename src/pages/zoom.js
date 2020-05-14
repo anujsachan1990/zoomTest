@@ -14,16 +14,16 @@ import FlipLiveVideos from "../components/videoDemos/flipLiveVideos";
 
 const App = () => {
   return (
-    <Router>
-      <PrivateRoute path="/zoom" component={Meeting} />
-      <PrivateRoute path="/zoom/yourMeeting" component={IframeWithMeeting} />
-      <PrivateRoute path="/zoom/meeting" component={ZoomMeeting} hideLayout />
-      <EcamLive path="/zoom/ecamm" />
-      <OneStream path="/zoom/onestream" />
-      <YoutubeLiveWithSlido path="/zoom/youtubeLiveWithSlido" />
-      <YoutubeSlido path="/zoom/youtubeSlido" />
-      <ZoomWithSlido path="/zoom/zoomWithSlido" />
-      <FlipLiveVideos path="/zoom/flipLiveVideos" />
+    <Router basepath="/zoom">
+      <PrivateRoute path="/" component={Meeting} />
+      <PrivateRoute path="/yourMeeting" component={IframeWithMeeting} />
+      <PrivateRoute path="/meeting" component={ZoomMeeting} hideLayout />
+      <EcamLive path="/ecamm" />
+      <OneStream path="/onestream" />
+      <YoutubeLiveWithSlido path="/youtubeLiveWithSlido" />
+      <YoutubeSlido path="/youtubeSlido" />
+      <ZoomWithSlido path="/zoomWithSlido" />
+      <FlipLiveVideos path="/flipLiveVideos" />
     </Router>
   );
 };
