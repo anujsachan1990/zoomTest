@@ -14,8 +14,8 @@ module.exports = {
   },
 
   siteMetadata: {
-    title: `Zoom Test with web-sdk POC`,
-    description: `Zoom web-sdk integration.`,
+    title: `Webinar POC`,
+    description: `Webinar POC`,
     author: `Anuj Sachan`,
   },
   plugins: [

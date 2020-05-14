@@ -1,6 +1,6 @@
 // import ...
 import React from "react";
-import { navigate } from "@reach/router";
+// import { navigate } from "@reach/router";
 import { useAuth } from "react-use-auth";
 
 import Layout from "../components/layout";
@@ -14,7 +14,7 @@ const PrivateRoute = ({
   const { isAuthenticated } = useAuth();
 
   if (!isAuthenticated()) {
-    navigate("/");
+    // navigate("/");
     return null;
   }
 

@@ -28,7 +28,6 @@ const Layout = ({ children, hideLogin }) => {
     <>
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        {!hideLogin && <LoginLogout />}
       </>
 
       <div
@@ -39,7 +38,10 @@ const Layout = ({ children, hideLogin }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main>
+          {!hideLogin && <LoginLogout />}
+          {children}
+        </main>
       </div>
     </>
   );

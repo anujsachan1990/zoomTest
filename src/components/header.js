@@ -1,6 +1,34 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+
+const nav = [
+  {
+    to: "/zoom/zoomWithSlido",
+    label: "Zoom with Slido",
+  },
+  {
+    to: "/zoom/ecamm",
+    label: "Ecamm",
+  },
+  {
+    to: "/zoom/onestream",
+    label: "One Stream",
+  },
+  {
+    to: "/zoom/youtubeLiveWithSlido",
+    label: "Youtube live with Slido",
+  },
+  {
+    to: "/zoom/youtubeSlido",
+    label: "Youtube with slido",
+  },
+
+  {
+    to: "/zoom/flipVideo",
+    label: "FlipVideo",
+  },
+];
 
 const Header = ({ siteTitle }) => (
   <header
@@ -28,15 +56,30 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    <div className="navigation">
+      {nav.map((item) => {
+        return (
+          <Link
+            to={item.to}
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {item.label}
+          </Link>
+        );
+      })}
+    </div>
   </header>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

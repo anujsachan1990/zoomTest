@@ -1,14 +1,13 @@
 import React from "react";
 
-export default function IframeWithMeeting() {
+export default function ZoomWithSlido() {
   const urlParams = new URLSearchParams(window.location.search);
   const meetingNumber = urlParams.get("meetingNumber");
   const userName = urlParams.get("userName");
 
   return (
     <>
-      <h1>With Zoom and Slido</h1>
-      <p>Both are different iframes</p>
+      <h3>With Zoom </h3>
       <div className="iframeWindow">
         <iframe
           id="zoom"
@@ -18,6 +17,7 @@ export default function IframeWithMeeting() {
           allow="camera;microphone"
           SameSite="Lax"
         />
+
         <iframe
           src="https://app.sli.do/event/gyfkiaft"
           height="500"
