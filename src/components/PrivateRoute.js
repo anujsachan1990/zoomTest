@@ -13,7 +13,7 @@ const PrivateRoute = ({
 }) => {
   const { isAuthenticated } = useAuth();
 
-  if (!isAuthenticated()) {
+  if (!isAuthenticated() && typeof window !== "undefined") {
     window.location.reload();
     return null;
   }
