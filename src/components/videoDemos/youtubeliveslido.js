@@ -3,7 +3,7 @@ import Layout from "../layout";
 export default function IframeWithMeeting() {
   return (
     <Layout hideLogin>
-      <h3>With Youtube live video</h3>
+      <h2>With Youtube live video</h2>
       <iframe
         src="https://app.sli.do/event/37tabfoo"
         height="600"
