@@ -4,6 +4,7 @@ export default function IframeWithMeeting() {
   const urlParams = new URLSearchParams(window.location.search);
   const meetingNumber = urlParams.get("meetingNumber");
   const userName = urlParams.get("userName");
+  const userEmail = urlParams.get("userEmail");
 
   return (
     <>
@@ -15,7 +16,7 @@ export default function IframeWithMeeting() {
       <div className="iframeWindow">
         <iframe
           id="zoom"
-          src={`/zoom/meeting?meetingNumber=${meetingNumber}&userName=${userName}`}
+          src={`/zoom/meeting?meetingNumber=${meetingNumber}&userName=${userName}&userEmail=${userEmail}`}
           width="100%"
           height="500"
           allow="camera;microphone"

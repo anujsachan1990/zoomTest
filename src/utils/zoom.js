@@ -1,4 +1,4 @@
-export const initZoom = async ({ meetingNumber, userName }) => {
+export const initZoom = async ({ meetingNumber, userName, userEmail }) => {
   console.log("user", userName);
   // lazy load script
   const { ZoomMtg } = await import("@zoomus/websdk");
@@ -26,6 +26,7 @@ export const initZoom = async ({ meetingNumber, userName }) => {
       apiSecret: API_SECRET,
       meetingNumber,
       userName,
+      userEmail,
       passWord: "anuj",
       leaveUrl: "/meetingend",
       role: 0,
@@ -58,6 +59,7 @@ export const initZoom = async ({ meetingNumber, userName }) => {
             ZoomMtg.join({
               meetingNumber: meetConfig.meetingNumber,
               userName: meetConfig.userName,
+              userEmail: meetConfig.userEmail,
               signature: res.result,
               apiKey: meetConfig.apiKey,
               passWord: meetConfig.passWord,
