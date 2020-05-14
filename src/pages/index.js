@@ -9,6 +9,7 @@ import { navigate } from "gatsby";
 
 const IndexPage = () => {
   const { isAuthenticated } = useAuth();
+
   return (
     <Layout hideLogin>
       <SEO title="Home" />
