@@ -4,11 +4,6 @@ import React from "react";
 
 const nav = [
   {
-    to: "/zoom",
-    label: "your meetings",
-    relaod: true,
-  },
-  {
     to: "/zoom/ecamm",
     label: "Ecamm",
   },

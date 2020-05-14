@@ -16,13 +16,16 @@ Step 4: Select typefaces. Favor sans-serif for UI components, and try to select 
 html,
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    "Lucida Sans", Arial, sans-serif !important;
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
   overflow-x: hidden;
+}
+a {
+  color: #4caf50;
 }
 
 #zmmtg-root {
@@ -123,4 +126,8 @@ nav {
 
 main {
   margin-top: 50px;
+}
+
+.upcoming {
+  margin: 50px 0;
 }

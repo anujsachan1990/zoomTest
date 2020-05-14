@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layout";
 export default function IframeWithMeeting() {
   return (
-    <Layout>
+    <Layout hideLogin>
       <h3>With Youtube live video</h3>
       <iframe
         src="https://app.sli.do/event/37tabfoo"

@@ -14,7 +14,7 @@ const PrivateRoute = ({
   const { isAuthenticated } = useAuth();
 
   if (!isAuthenticated()) {
-    // navigate("/");
+    window.location.reload();
     return null;
   }
 
