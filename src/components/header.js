@@ -29,7 +29,7 @@ const nav = [
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `black`,
+      background: `#0c8573`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -40,7 +40,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0, textAlign: "center" }}>
+      <h1 className="logo">
         <Link
           to="/"
           style={{

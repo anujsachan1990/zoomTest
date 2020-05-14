@@ -15,17 +15,29 @@ Step 4: Select typefaces. Favor sans-serif for UI components, and try to select 
 
 html,
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  font-weight: 400;
   margin: 0;
 }
 
+.logo {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 26px;
+}
 body {
   overflow-x: hidden;
 }
 a {
-  color: #4caf50;
+  color: #0c8573;
 }
 
 #zmmtg-root {
@@ -42,11 +54,15 @@ a {
 
 .container li {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 400;
 }
 
+main {
+  margin-bottom: 150px;
+}
 button {
-  background-color: #4caf50;
+  background-color: #0c8573;
   /* Green */
   border: none;
   color: white;
@@ -116,12 +132,14 @@ nav {
 .navigation {
   max-width: 1200px;
   margin: 0px auto;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
 .navigation a {
   margin: 10px;
+  border-right: 1px solid #fff;
+  padding-right: 13px;
 }
 
 main {
@@ -130,4 +148,13 @@ main {
 
 .upcoming {
   margin: 50px 0;
+}
+
+footer {
+  height: 50px;
+  background: #e1e1e1;
+  position: fixed;
+  bottom: 0;
+  margin-top: 30px;
+  width: 100%;
 }

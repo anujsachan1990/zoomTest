@@ -43,6 +43,7 @@ const Layout = ({ children, hideLogin }) => {
           {children}
         </main>
       </div>
+      <footer></footer>
     </>
   );
 };
