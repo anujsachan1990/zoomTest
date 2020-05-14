@@ -149,6 +149,7 @@ nav {
   margin: 10px;
   border-right: 1px solid #fff;
   padding-right: 13px;
+  display: inline-block;
 }
 .navigation a:last-child {
   margin: 10px;
