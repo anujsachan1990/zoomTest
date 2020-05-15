@@ -202,3 +202,12 @@ header + .layout {
   max-width: 1200px;
   padding: 0 1.0875rem 1.45rem;
 }
+
+/* zoom styles */
+
+.suspension-content-radius.suspension-content {
+  display: none;
+}
+button.undefined.footer-button__button.ax-outline[aria-label="Raise Hand"] {
+  display: none;
+}
