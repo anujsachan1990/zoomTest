@@ -16,7 +16,7 @@ export default function HTML(props) {
           integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossOrigin="anonymous"
         />
-        <script src="http://www.youtube.com/player_api" />
+        <script src="https://www.youtube.com/player_api" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
