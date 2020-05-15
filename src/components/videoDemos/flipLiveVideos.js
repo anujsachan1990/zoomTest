@@ -11,7 +11,7 @@ export default function FlipVideo() {
           {toggle ? (
             <iframe
               height="500"
-              width="700"
+              className="video1"
               src="https://www.youtube.com/embed/6xrJy-1_qS4?autoplay=1"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -20,7 +20,7 @@ export default function FlipVideo() {
           ) : (
             <iframe
               height="500"
-              width="700"
+              className="video2"
               src="https://www.youtube.com/embed/9Auq9mYxFEE?autoplay=1"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -31,7 +31,7 @@ export default function FlipVideo() {
         <iframe
           src="https://app.sli.do/event/o7jwlgb0"
           height="500"
-          width="500"
+          className="slido"
         ></iframe>
       </div>
       <br />
