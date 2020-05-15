@@ -11,6 +11,7 @@ import YoutubeLiveWithSlido from "../components/videoDemos/youtubeliveslido";
 import YoutubeSlido from "../components/videoDemos/youtubeslido";
 import ZoomWithSlido from "../components/videoDemos/zoomwithslido";
 import FlipLiveVideos from "../components/videoDemos/flipLiveVideos";
+import FlipLiveVideozoom from "../components/videoDemos/flipLiveVideozoom";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <YoutubeSlido path="/youtubeSlido" />
       <ZoomWithSlido path="/zoomWithSlido" />
       <FlipLiveVideos path="/flipLiveVideos" />
+      <FlipLiveVideozoom path="/flipLiveVideozoom" />
     </Router>
   );
 };

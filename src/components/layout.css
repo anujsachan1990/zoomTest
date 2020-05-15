@@ -211,3 +211,6 @@ header + .layout {
 button.undefined.footer-button__button.ax-outline[aria-label="Raise Hand"] {
   display: none;
 }
+.hide {
+  display: none;
+}

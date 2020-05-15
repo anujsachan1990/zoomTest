@@ -61,7 +61,7 @@ const Meetings = () => {
       <div>
         <ul>
           <li>
-            Meeting 1{" "}
+            Meeting 1
             <button
               onClick={() =>
                 navigate(
@@ -76,13 +76,14 @@ const Meetings = () => {
               {" "}
               join
             </button>
+            {" (zoom SDK)"}
           </li>
           <li>
-            Meeting 2{" "}
+            Meeting 2
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/yourMeeting?meetingNumber=72874024378&userName=${
+                  `/zoom/flipLiveVideozoom?meetingNumber=96519653525&userName=${
                     JSON.parse(localStorage.getItem("useAuth:user")).name
                   }&userEmail=${
                     JSON.parse(localStorage.getItem("useAuth:user")).email
@@ -93,6 +94,7 @@ const Meetings = () => {
               {" "}
               join
             </button>
+            {" (Auto flip with Pre-recorded to Zoom)"}
           </li>
           <li>
             Meeting 3{" "}

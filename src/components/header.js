@@ -4,6 +4,10 @@ import React from "react";
 
 const nav = [
   {
+    to: "/zoom",
+    label: "Your Meetings",
+  },
+  {
     to: "/zoom/ecamm",
     label: "Ecamm",
   },
