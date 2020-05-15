@@ -1,7 +1,7 @@
 // import ...
 import React from "react";
 // import { navigate } from "@reach/router";
-import { useAuth } from "react-use-auth";
+// import { useAuth } from "react-use-auth";
 
 import Layout from "../components/layout";
 
@@ -11,12 +11,12 @@ const PrivateRoute = ({
   hideLayout,
   ...rest
 }) => {
-  const { isAuthenticated } = useAuth();
+  // const { isAuthenticated } = useAuth();
 
-  if (!isAuthenticated() && typeof window !== "undefined") {
-    // window.location.reload();
-    return null;
-  }
+  // if (!isAuthenticated() && typeof window !== "undefined") {
+  //   // window.location.reload();
+  //   return null;
+  // }
 
   return hideLayout ? (
     <Component {...rest} />
