@@ -2,9 +2,15 @@ import React, { useEffect } from "react";
 import Profile from "../components/profile";
 import { notifyMe } from "../utils/notification";
 import { navigate } from "@reach/router";
+import { useAuth } from "react-use-auth";
 
 const Meetings = () => {
+  const { authResult } = useAuth();
+
   useEffect(() => {
+    if (authResult) {
+      localStorage.setItem("accessToken", authResult.accessToken);
+    }
     setTimeout(() => {
       notifyMe();
     }, 2000);
