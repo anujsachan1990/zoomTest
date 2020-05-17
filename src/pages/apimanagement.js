@@ -16,7 +16,7 @@ const makeAPICall = async () => {
 const API = () => (
   <Layout>
     <button onClick={() => makeAPICall()}>
-      Click to Get Data from Airtable
+      Click to Get Data from secure api
     </button>
   </Layout>
 );
