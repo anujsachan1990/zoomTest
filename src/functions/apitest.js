@@ -4,7 +4,19 @@ const { checkHeaderForValidToken } = require("./auth.js");
 // sample API URL
 // http://anuj-zoom.netlify.com/.netlify/functions/hello
 
-const data = () =>
+exports.handler = async (event, context, callback) => {
+  try {
+    await checkHeaderForValidToken({
+      authorization: event.headers.authorization,
+    });
+  } catch (err) {
+    console.error(err);
+    return {
+      statusCode: 401,
+      body: JSON.stringify({ msg: err }),
+    };
+  }
+
   axios
     .get("https://api.airtable.com/v0/appzhdjp7tk4G73Bh/Table%201", {
       headers: {
@@ -26,22 +38,4 @@ const data = () =>
     .catch((err) => {
       callback(err);
     });
-
-exports.handler = async (event, context, callback) => {
-  try {
-    await checkHeaderForValidToken({
-      authorization: event.headers.authorization,
-    });
-  } catch (err) {
-    console.error(err);
-    return {
-      statusCode: 401,
-      body: JSON.stringify({ msg: err }),
-    };
-  }
-
-  callback(null, {
-    statusCode: 200,
-    body: data(),
-  });
 };
