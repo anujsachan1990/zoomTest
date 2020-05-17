@@ -8,6 +8,9 @@ export const wrapRootElement = ({ element }) => (
     navigate={navigate}
     auth0_domain="dev-uh80r-xh.au.auth0.com"
     auth0_client_id="Hs79BwTcnlTVe9gv4l4tORzhqUBfJKoy"
+    audience={`https://dev-uh80r-xh.au.auth0.com/api/v2/`}
+    responseType={"token id_token"}
+    scope={"openid profile email"}
   >
     {element}
   </AuthProvider>

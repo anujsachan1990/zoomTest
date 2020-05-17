@@ -3,8 +3,12 @@ import Layout from "../components/layout";
 import { useAuth } from "react-use-auth";
 
 const Auth0CallbackPage = () => {
-  const { handleAuthentication } = useAuth();
+  const { handleAuthentication, authResult } = useAuth();
+
   useEffect(() => {
+    if (authResult) {
+      localStorage.setItem("accessToken", authResult.accessToken);
+    }
     handleAuthentication({ postLoginRoute: "/zoom" });
   }, []);
 
