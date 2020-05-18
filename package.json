@@ -33,6 +33,7 @@
     "use-auth0-hooks": "^0.7.0"
   },
   "devDependencies": {
+    "encoding": "^0.1.12",
     "gatsby-plugin-emotion": "^4.1.15",
     "prettier": "^1.19.1"
   },
