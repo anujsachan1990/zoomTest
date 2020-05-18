@@ -12,6 +12,7 @@ import YoutubeSlido from "../components/videoDemos/youtubeslido";
 import ZoomWithSlido from "../components/videoDemos/zoomwithslido";
 import FlipLiveVideos from "../components/videoDemos/flipLiveVideos";
 import FlipLiveVideozoom from "../components/videoDemos/flipLiveVideozoom";
+import Bigmarker from "../components/videoDemos/bigmarker";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       <ZoomWithSlido path="/zoomWithSlido" />
       <FlipLiveVideos path="/flipLiveVideos" />
       <FlipLiveVideozoom path="/flipLiveVideozoom" />
+      <Bigmarker path="/bigmarker" />
     </Router>
   );
 };
