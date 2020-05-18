@@ -9,6 +9,7 @@
     "@emotion/styled": "^10.0.23",
     "@zoomus/websdk": "^1.7.7",
     "axios": "^0.19.2",
+    "faunadb": "^2.14.1",
     "gatsby": "^2.21.33",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-create-client-paths": "^2.3.1",

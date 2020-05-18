@@ -1,4 +1,3 @@
-import axios from "axios";
 const { checkHeaderForValidToken } = require("./auth.js");
 
 // sample API URL
