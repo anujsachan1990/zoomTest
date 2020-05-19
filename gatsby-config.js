@@ -61,7 +61,7 @@ module.exports = {
       resolve: "gatsby-plugin-auth0",
       options: {
         domain: "dev-uh80r-xh.au.auth0.com",
-        clientId: "5kxBWkXsFOHoWiN9WHsA37T5SVB06Drk",
+        clientId: "ubilBowSg9FhTOhmjczE2kp3CU1Fi5Lg",
       },
     },
   ],
