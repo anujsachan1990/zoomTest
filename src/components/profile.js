@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useAuth0 } from "../../plugins/gatsby-plugin-auth0";
 
 export default function Profile() {
-  const [state, setstate] = useState({});
-  useEffect(() => {
-    const userProfile = JSON.parse(localStorage.getItem("useAuth:user"));
-    setTimeout(setstate(userProfile), 1000);
-  }, []);
+  const { user } = useAuth0();
+
   return (
-    state && (
+    user && (
       <div className="profile">
-        <img src={state.picture}></img>
+        <img src={user.picture}></img>
         <div className="profileDetails">
-          <div>Name: {state.name}</div>
-          <div>Email: {state.email}</div>
-          <div>Email Verified: {state.email_verified ? "Yes" : "No"}</div>
+          <div>Name: {user.name}</div>
+          <div>Email: {user.email}</div>
+          <div>Email Verified: {user.email_verified ? "Yes" : "No"}</div>
         </div>
       </div>
     )

@@ -8,7 +8,10 @@ import { useAuth0 } from "../../plugins/gatsby-plugin-auth0";
 import { navigate } from "gatsby";
 
 const IndexPage = () => {
-  const { isAuthenticated } = useAuth0();
+  const { isAuthenticated, getTokenSilently } = useAuth0();
+  if (isAuthenticated) {
+    console.log("getTokenSilently", getTokenSilently());
+  }
 
   return (
     <Layout hideLogin>
