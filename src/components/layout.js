@@ -8,6 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
+import LoginLogout from "../components/loginLogout";
 
 import Header from "./header";
 import "./layout.css";
@@ -30,7 +31,10 @@ const Layout = ({ children, hideLogin }) => {
       </>
 
       <div className="layout">
-        <main>{children}</main>
+        <main>
+          {!hideLogin && <LoginLogout />}
+          {children}
+        </main>
       </div>
       <footer></footer>
     </>

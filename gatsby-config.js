@@ -12,7 +12,6 @@ module.exports = {
       })
     );
   },
-
   siteMetadata: {
     title: `Webinar POC`,
     description: `Webinar POC`,
@@ -29,7 +28,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/zoom/*`] },
+      options: {
+        prefixes: [`/zoom/*`],
+      },
     },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-playground`,
@@ -53,9 +54,15 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    }, // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-auth0",
+      options: {
+        domain: "dev-uh80r-xh.au.auth0.com",
+        clientId: "5kxBWkXsFOHoWiN9WHsA37T5SVB06Drk",
+      },
+    },
   ],
 };

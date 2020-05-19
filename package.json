@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Michael S. Caveney",
   "dependencies": {
+    "@auth0/auth0-spa-js": "^1.8.1",
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
     "@zoomus/websdk": "^1.7.7",

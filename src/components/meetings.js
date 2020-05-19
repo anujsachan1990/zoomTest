@@ -1,16 +1,14 @@
 import React, { useEffect } from "react";
 import Profile from "../components/profile";
 import { notifyMe } from "../utils/notification";
+import { useAuth0 } from "../../plugins/gatsby-plugin-auth0";
+
 import { navigate } from "@reach/router";
-import { useAuth } from "react-use-auth";
 
 const Meetings = () => {
-  const { authResult } = useAuth();
+  const { user } = useAuth0();
 
   useEffect(() => {
-    if (authResult) {
-      localStorage.setItem("accessToken", authResult.accessToken);
-    }
     setTimeout(() => {
       notifyMe();
     }, 2000);
@@ -71,11 +69,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/yourMeeting?meetingNumber=96519653525&userName=${
-                    JSON.parse(localStorage.getItem("useAuth:user")).name
-                  }&userEmail=${
-                    JSON.parse(localStorage.getItem("useAuth:user")).email
-                  }`
+                  `/zoom/yourMeeting?meetingNumber=96519653525&userName=${user.name}&userEmail=${user.email}`
                 )
               }
             >
@@ -89,11 +83,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/flipLiveVideozoom?meetingNumber=96519653525&userName=${
-                    JSON.parse(localStorage.getItem("useAuth:user")).name
-                  }&userEmail=${
-                    JSON.parse(localStorage.getItem("useAuth:user")).email
-                  }`
+                  `/zoom/flipLiveVideozoom?meetingNumber=96519653525&userName=${user.name}&userEmail=${user.email}`
                 )
               }
             >
@@ -107,11 +97,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/yourMeeting?meetingNumber=77654577325&userName=${
-                    JSON.parse(localStorage.getItem("useAuth:user")).name
-                  }&userEmail=${
-                    JSON.parse(localStorage.getItem("useAuth:user")).email
-                  }`
+                  `/zoom/yourMeeting?meetingNumber=77654577325&userName=${user.name}&userEmail=${user.email}`
                 )
               }
             >
