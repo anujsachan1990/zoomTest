@@ -14,19 +14,23 @@ const PrivateRoute = ({
   hideLayout,
   ...rest
 }) => {
-  const { isAuthenticated } = useAuth0();
+  const { isAuthenticated, loading } = useAuth0();
 
-  if (!isAuthenticated && typeof window !== "undefined") {
-    navigate("/");
-    return null;
+  if (loading) {
+    return <p>loading...</p>;
+  } else {
+    if (!isAuthenticated && typeof window !== "undefined") {
+      navigate("/");
+      return null;
+    } else {
+      return hideLayout ? (
+        <Component {...rest} />
+      ) : (
+        <Layout>
+          <Component {...rest} />
+        </Layout>
+      );
+    }
   }
-
-  return hideLayout ? (
-    <Component {...rest} />
-  ) : (
-    <Layout>
-      <Component {...rest} />
-    </Layout>
-  );
 };
 export default PrivateRoute;
