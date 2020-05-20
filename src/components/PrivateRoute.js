@@ -1,5 +1,8 @@
 // import ...
 import React from "react";
+import { useAuth0 } from "../../plugins/gatsby-plugin-auth0";
+import { navigate } from "@reach/router";
+
 // import { navigate } from "@reach/router";
 // import { useAuth } from "react-use-auth";
 
@@ -11,12 +14,12 @@ const PrivateRoute = ({
   hideLayout,
   ...rest
 }) => {
-  // const { isAuthenticated } = useAuth();
+  const { isAuthenticated } = useAuth0();
 
-  // if (!isAuthenticated() && typeof window !== "undefined") {
-  //   // window.location.reload();
-  //   return null;
-  // }
+  if (!isAuthenticated && typeof window !== "undefined") {
+    navigate("/");
+    return null;
+  }
 
   return hideLayout ? (
     <Component {...rest} />
