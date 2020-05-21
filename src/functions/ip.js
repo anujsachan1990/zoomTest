@@ -1,14 +1,14 @@
 import axios from "axios";
 
-// sample API URL
-// http://anuj-zoom.netlify.com/.netlify/functions/hello
-
 exports.handler = (event, context, callback) => {
   axios
-    .get("https://api.ipify.org")
+    .get("https://api6.ipify.org?format=json")
     .then((res) => {
       callback(null, {
         statusCode: 200,
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(res.data),
       });
     })
