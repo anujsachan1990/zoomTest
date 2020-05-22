@@ -9,7 +9,7 @@ const nav = [
   },
   {
     to: "/zoom/animation",
-    label: "Animation Video (login Required)",
+    label: "Animation Video",
   },
   {
     to: "/zoom/ecamm",

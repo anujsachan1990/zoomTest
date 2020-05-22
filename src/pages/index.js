@@ -26,9 +26,7 @@ const IndexPage = () => {
           <>
             <h3>Click below to see your meetings</h3>
             <button onClick={() => navigate("/zoom")}>your meetings</button>
-            <button onClick={() => navigate("/zoom/animation")}>
-              Animation Video
-            </button>
+
             <LoginLogout />
           </>
         )}

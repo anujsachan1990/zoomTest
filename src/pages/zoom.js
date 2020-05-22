@@ -21,7 +21,6 @@ const App = () => {
       <PrivateRoute path="/" component={Meeting} />
       <PrivateRoute path="/yourMeeting" component={IframeWithMeeting} />
       <PrivateRoute path="/meeting" component={ZoomMeeting} hideLayout />
-      <PrivateRoute path="/animation" component={Animation} hideLayout />
       <EcamLive path="/ecamm" />
       <OneStream path="/onestream" />
       <YoutubeLiveWithSlido path="/youtubeLiveWithSlido" />
@@ -30,7 +29,7 @@ const App = () => {
       <FlipLiveVideos path="/flipLiveVideos" />
       <FlipLiveVideozoom path="/flipLiveVideozoom" />
       <Bigmarker path="/bigmarker" />
-      <Animation path="/animation" />
+      <Animation path="/Animation" />
     </Router>
   );
 };
