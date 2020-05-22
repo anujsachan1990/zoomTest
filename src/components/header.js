@@ -8,6 +8,10 @@ const nav = [
     label: "Your Meetings",
   },
   {
+    to: "/zoom/animation",
+    label: "Animation Video (login Required)",
+  },
+  {
     to: "/zoom/ecamm",
     label: "Ecamm",
   },
