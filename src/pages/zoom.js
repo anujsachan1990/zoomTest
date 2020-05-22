@@ -29,7 +29,7 @@ const App = () => {
       <FlipLiveVideos path="/flipLiveVideos" />
       <FlipLiveVideozoom path="/flipLiveVideozoom" />
       <Bigmarker path="/bigmarker" />
-      <Animation path="/Animation" />
+      <Animation path="/animation" />
     </Router>
   );
 };
