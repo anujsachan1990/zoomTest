@@ -13,6 +13,7 @@ import ZoomWithSlido from "../components/videoDemos/zoomwithslido";
 import FlipLiveVideos from "../components/videoDemos/flipLiveVideos";
 import FlipLiveVideozoom from "../components/videoDemos/flipLiveVideozoom";
 import Bigmarker from "../components/videoDemos/bigmarker";
+import Animation from "../components/videoDemos/animation";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <PrivateRoute path="/" component={Meeting} />
       <PrivateRoute path="/yourMeeting" component={IframeWithMeeting} />
       <PrivateRoute path="/meeting" component={ZoomMeeting} hideLayout />
+      <PrivateRoute path="/animation" component={Animation} hideLayout />
       <EcamLive path="/ecamm" />
       <OneStream path="/onestream" />
       <YoutubeLiveWithSlido path="/youtubeLiveWithSlido" />
@@ -28,6 +30,7 @@ const App = () => {
       <FlipLiveVideos path="/flipLiveVideos" />
       <FlipLiveVideozoom path="/flipLiveVideozoom" />
       <Bigmarker path="/bigmarker" />
+      <Animation path="/animation" />
     </Router>
   );
 };
