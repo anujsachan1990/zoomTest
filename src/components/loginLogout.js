@@ -2,7 +2,7 @@ import React from "react";
 import { useAuth0 } from "../../plugins/gatsby-plugin-auth0";
 
 const LoginLogout = () => {
-  const { isAuthenticated, loading, logout, loginWithPopup } = useAuth0();
+  const { isAuthenticated, loading, logout, loginWithRedirect } = useAuth0();
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -15,7 +15,7 @@ const LoginLogout = () => {
         </>
       ) : (
         <>
-          <button onClick={() => loginWithPopup()}>Log in</button>
+          <button onClick={() => loginWithRedirect()}>Log in</button>
         </>
       )}
     </div>
