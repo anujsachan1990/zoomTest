@@ -8,7 +8,7 @@
     "@auth0/auth0-spa-js": "^1.8.1",
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
-    "@zoomus/websdk": "^1.7.7",
+    "@zoomus/websdk": "1.7.10",
     "axios": "^0.19.2",
     "faunadb": "^2.14.1",
     "gatsby": "^2.21.33",

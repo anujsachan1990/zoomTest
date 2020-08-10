@@ -8,7 +8,7 @@ export const initZoom = async ({ meetingNumber, userName, userEmail }) => {
     console.log("checkSystemRequirements");
     console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
 
-    ZoomMtg.setZoomJSLib("https://source.zoom.us/1.7.7/lib", "/av"); // CDN version default
+    ZoomMtg.setZoomJSLib("https://source.zoom.us/1.7.10/lib", "/av"); // CDN version default
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareJssdk();
     var API_KEY = "66xq-9HhQnCAPzeKGyfnCQ";
