@@ -18,12 +18,13 @@ import Animation from "../components/videoDemos/animation";
 const App = () => {
   return (
     <Router basepath="/zoom">
-      <PrivateRoute path="/" component={Meeting} />
-      <PrivateRoute path="/yourMeeting" component={IframeWithMeeting} />
+      <Meeting path="/" />
+      <IframeWithMeeting path="/yourMeeting" />
       <ZoomMeeting path="/meeting" hideLayout />
       <EcamLive path="/ecamm" />
       <OneStream path="/onestream" />
       <YoutubeLiveWithSlido path="/youtubeLiveWithSlido" />
+
       <YoutubeSlido path="/youtubeSlido" />
       <ZoomWithSlido path="/zoomWithSlido" />
       <FlipLiveVideos path="/flipLiveVideos" />
