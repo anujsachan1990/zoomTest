@@ -20,7 +20,7 @@ const App = () => {
     <Router basepath="/zoom">
       <PrivateRoute path="/" component={Meeting} />
       <PrivateRoute path="/yourMeeting" component={IframeWithMeeting} />
-      <PrivateRoute path="/meeting" component={ZoomMeeting} hideLayout />
+      <ZoomMeeting path="/meeting" hideLayout />
       <EcamLive path="/ecamm" />
       <OneStream path="/onestream" />
       <YoutubeLiveWithSlido path="/youtubeLiveWithSlido" />
