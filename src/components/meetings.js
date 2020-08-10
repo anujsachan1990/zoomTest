@@ -69,7 +69,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/yourMeeting?meetingNumber=96519653525&userName=${user.name}&userEmail=${user.email}`
+                  `/zoom/yourMeeting?meetingNumber=97865361718&userName=${user.name}&userEmail=${user.email}`
                 )
               }
             >
@@ -83,7 +83,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/flipLiveVideozoom?meetingNumber=96519653525&userName=${user.name}&userEmail=${user.email}`
+                  `/zoom/flipLiveVideozoom?meetingNumber=97865361718&userName=${user.name}&userEmail=${user.email}`
                 )
               }
             >
@@ -97,7 +97,7 @@ const Meetings = () => {
             <button
               onClick={() =>
                 navigate(
-                  `/zoom/yourMeeting?meetingNumber=77654577325&userName=${user.name}&userEmail=${user.email}`
+                  `/zoom/yourMeeting?meetingNumber=97865361718&userName=${user.name}&userEmail=${user.email}`
                 )
               }
             >
